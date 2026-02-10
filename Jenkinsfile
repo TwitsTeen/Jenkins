@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo 'Compilation du projet Java...'
                 sh 'javac Factorial.java'
-                sh 'javac -cp .:junit-platform-console-standalone.jar FactorialTest.java'
+                sh 'javac -cp .:junit-platform-console-standalone-1.9.3.jar FactorialTest.java'
             }
         }
     }
